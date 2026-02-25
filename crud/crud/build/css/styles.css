@@ -1,0 +1,168 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #1e3a8a, #9333ea);
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+/* HEADER */
+header {
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(10px);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+/* NAV */
+nav {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 12px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+nav a:hover {
+    color: #facc15;
+    transform: scale(1.05);
+}
+
+/* CONTENEDOR */
+.container {
+    width: 90%;
+    margin: 30px auto;
+}
+
+/* TARJETAS */
+form, table {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+    padding: 20px;
+}
+
+/* TABLA */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    overflow: hidden;
+}
+
+th {
+    background: linear-gradient(90deg, #2563eb, #7c3aed);
+    color: white;
+    padding: 14px;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+
+td {
+    padding: 12px;
+    border-bottom: 1px solid #eee;
+}
+
+tr:hover {
+    background: #f3f4f6;
+    transition: 0.2s;
+}
+
+/* FORM */
+input, select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+input:focus, select:focus {
+    border-color: #7c3aed;
+    outline: none;
+    box-shadow: 0 0 8px rgba(124, 58, 237, 0.4);
+}
+
+/* BOTONES */
+button {
+    background: linear-gradient(90deg, #2563eb, #7c3aed);
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+}
+
+/* MENSAJES DE ERROR */
+.error {
+    color: #dc2626;
+    font-size: 0.85rem;
+    margin-top: -6px;
+    margin-bottom: 10px;
+}
+
+/* BOTONES EDITAR / ELIMINAR */
+.btn-editar, .btn-eliminar {
+    display: inline-block;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-editar {
+    background: #10b981;
+    color: white;
+}
+
+.btn-editar:hover {
+    background: #059669;
+    transform: scale(1.05);
+}
+
+.btn-eliminar {
+    background: #ef4444;
+    color: white;
+}
+
+.btn-eliminar:hover {
+    background: #dc2626;
+    transform: scale(1.05);
+}
+
+/* FILA SELECCIONADA */
+.fila-usuario {
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.fila-usuario.seleccionada {
+    background-color: #ddd6fe;
+    font-weight: 600;
+}
+
+/* NAV DESACTIVADO */
+.nav-disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+}
